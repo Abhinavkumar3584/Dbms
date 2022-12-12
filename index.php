@@ -34,6 +34,8 @@ if(isset($_POST['first_name'])){
 
     if($con->query($sql) == true){
         $insert = 1;
+        header("Location: http://localhost/Dbms/login.php");
+      exit();
     }
     else{
         echo "ERROR: $sql <br> $con->error";
@@ -133,7 +135,7 @@ if(isset($_POST['first_name'])){
       </div> -->
       <!-- <a class="line3">Use 8 or more characters with a mix of letters, numbers & symbols</a> -->
       <br>
-      <a href="login.html" class="line4">Sign in</a>
+      <a href="http://localhost/Dbms/login.php" class="line4">Sign in</a>
       <input type="submit" value="Register">
     </form>
     <!-- <div class="side-image"> -->
